@@ -1,0 +1,92 @@
+%!TEX root = main.tex
+
+\vspace{-4mm}
+\section{Critical Limitations of State-of-the-art}\label{sec::Research-Gaps}
+\vspace{-2mm}
+
+
+Cryptocurrencies have several features that distinguish them from traditional payment systems. They are decentralised, allowing competition between different providers to drive down costs to users. They support smart contracts to reduce the trust that needs to be put in the cryptocurrency operator. They have irrevocable payments to give certainty to recipients of funds. While these features have considerable advantages, they also create new risks; for instance, \textbf{there is no (central) authority to facilitate recovery from fraud}, whether the result of a flawed smart contract or a malicious party. 
+
+Our research project will address this critical limitation by \textbf{developing decentralised fraud recovery mechanisms}, whereby victims can obtain redress while retaining the unique strengths of cryptocurrencies. The scheme will mirror the insurance facility in traditional payment systems, which are paid for by customers through transaction fees, whereby banks will in certain circumstances reimburse fraud victims. In our proposal, the insurance scheme will be decentralised and allow competition between providers and so reduce transaction fees, with smart contracts enforcing fair and transparent reimbursement policies. %This will protect victims of cryptocurrency fraud, and through careful incentives, the design will motivate all participants to prevent fraud from happening in the first place. 
+
+This will complement existing research on detecting fraud in cryptocurrencies mainly through methods based on machine learning 
+% 
+\href{https://core.ac.uk/download/pdf/225316624.pdf}{[\printcntr]}, \href{https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8946232&tag=1}{[\printcntr]}, \href{https://link.springer.com/content/pdf/10.1007/978-3-031-06791-4_18.pdf}{[\printcntr]} which (i) lack generality as they cannot support all types of cryptocurrencies, (ii) have been designed to detect specific types of fraud, e.g., Ponzi or pump-and-dump schemes, and (iii) cannot deal with all types of fraud nor defend against human errors. 
+% 
+On the other hand, the insurance market’s offerings to cover cryptocurrency fraud have not been established yet \href{https://www.rmmagazine.com/articles/article/2022/06/01/finding-coverage-for-cryptocurrency-losses}{[\printcntr]}. Since cryptocurrency is still in its infancy, insurers have been unable to price the risk. The lack of a clear regulatory framework also makes it challenging to unambiguously exclude cryptocurrency-related risks from businesses’ insurance policies, potentially leading to losses for insurers \href{https://news.bloomberglaw.com/insurance/crypto-risks-prompt-uptick-in-insurance-exclusions}{[\printcntr]}. Therefore, to date, (cyber) insurers have had little appetite to cover cryptocurrency. 
+
+
+
+%Research on enhancing the security of cryptocurrency is evolving. There have been efforts to detect certain fraud in cryptocurrency, mainly through methods based on data mining or machine learning, e.g., see [6, 7, 8]. However, these mechanisms lack generality and have been designed to detect specific types of fraud, e.g., Ponzi or pump-and-dump schemes. Even if the existing detection mechanisms were strong and generic enough to detect all types of fraud, in practice, it would be unrealistic to assume that cryptocurrency users would not fall victim to cryptocurrency fraud at all, as human errors can benefit fraudsters to successfully defraud victims. Furthermore, the significantly growing amount of money lost to cryptocurrency fraud indicates the existing detection mechanisms have been ineffective. 
+%
+%
+%In practice, the insurance market’s offerings to cover cryptocurrency fraud have not been established yet [9]. Since cryptocurrency is still in its infancy, insurers are having a hard time defining and pricing the risk. The lack of a clear regulatory framework also makes it challenging to unambiguously exclude cryptocurrency-related risks from businesses’ insurance policies which could potentially lead to losses for insurers [10]. Thus, to date, (cyber) insurers have had little appetite to cover cryptocurrency. Nevertheless, research on protecting victims of cryptocurrency fraud has been overlooked by the information security and cryptography research communities. 
+
+
+\vs
+
+%%%%%%%%%%%%
+\noindent\fcolorbox{gray}{gray!20}{%
+    \parbox{\sz}{%
+        \underline{\textbf{Critical Research Gap:}}
+    %
+\label{Q::crypto-fraud} \textit{ There exists no scientific study to understand how to devise secure mechanisms that can help victims of cryptocurrency fraud receive compensation for their financial losses.}
+%
+}}
+
+
+\vs
+
+
+
+
+Hence, due to the significant amount of money lost to cryptocurrency fraud and the lack of solutions, there is a pressing need to fill the above gap. 
+
+ %some insurers (e.g., Lloyd's) are beginning to market policies specifically designed to cover certain cryptocurrency losses . 
+
+
+
+
+%To deal with APP fraud in Online Banking, researchers and companies have developed ad-hoc mechanisms such as CoP and MITS, since 2016 when APP fraud drew the attention of regulators and banks.  
+%
+%
+%
+%
+%Nevertheless, there still exist critical research gaps; namely, \textbf{there exists no scientific study} \textbf{to discover a generic solution that can reimburse cryptocurrency fraud victims}. Due to the irreversible nature of transactions in cryptocurrency payment systems, and the fact that they are decentralised and do involve any central bank, it is very unlikely to recover any digital currency lost to fraud in these payment systems.  Although people all around the world have been losing huge amounts of money to cryptocurrency fraud, to date, there exists no technical generic solution that can reimburse cryptocurrency fraud victims who use various cryptocurrency payment systems, e.g., Bitcoin, Tether, or Ethereum.
+
+
+
+% no scientific studies exist to analyse these mechanisms' effectiveness and to ensure that these mechanisms will not create opportunities for exploitation when they are combined with existing payment systems. The increasing amount of money lost to APP fraud indicates that they are not effective enough. Furthermore, 
+
+%\begin{itemize}
+%
+%\item[$\bullet$] \textbf{to analyse the effectiveness of CoP and MITS}: It is vital to evaluate the security and effectiveness of any security mechanisms, including CoP and MITS, to determine to what extent they satisfy the predefined security requirements. %Such evaluation would be possible if the mechanisms' security needs had already been defined and formulated. Consequently, this would lead to further research gaps; namely, a lack of formal security definitions for CoP and MTS. 
+% 
+
+%\item[$\bullet$] \textbf{to analyse the security of CoP}.  In general, CoP is a query-response interactive protocol, where a sender of money inserts a recipient's public details (e.g., full name, and sort-code) into the Online Banking system and submits it to a bank whose responses indicate whether it has a customer with exact or similar details. Since the query can be sent by any customer including malicious ones, the CoP must ensure that the privacy of the recipient as well as other customers (that are not involved in the specific transaction with the sender of money) is not violated. However, currently, there has been absolutely no publicly available research that rigorously analyses the security of existing CoP and ensures that it does not violate money recipient's and other customers' privacy.  
+%
+%
+%%
+%\item[$\bullet$]  \textbf{to discover mule account detection mechanisms that are agnostic to adversarial strategies}. Existing solutions that detect mule accounts rely on known adversarial behaviours. However, such solutions would be ineffective if adversaries enhance their strategies or even take advantage of sophisticated technologies, such as AI. Currently, there exists no technical solution that guarantees mule accounts can be detected without relying on known adversarial behaviours.  
+
+
+%
+%\item[$\bullet$]  \textbf{to discover mule account detection mechanisms that can remain secure and effective even if adversaries enhance their strategies}, e.g., the adversaries that benefit from Artificial Intelligence (AI). Existing solutions that detect mule accounts rely on known adversarial behaviours. However, such solutions would be ineffective if adversaries enhance their strategies or even take advantage of sophisticated technologies, such as AI. Currently, there exists no technical solution that guarantees mule accounts can be detected without relying on known adversarial behaviours.  
+%
+%\item[$\bullet$] {\textcolor{blue} {say something like you want to improve the effectiveness of MITS by creating distrust between mule account holders and fraudsters}}
+
+%
+%\item[$\bullet$] {\textcolor{blue}{to deal with purchase fraud where the fraudster avoids sending goods to the buyer paid for}}. 
+%
+
+
+ %(that have different capabilities). 
+
+%
+
+
+
+%Furthermore, different cryptocurrencies have different capabilities.
+
+
+

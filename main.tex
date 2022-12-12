@@ -1,0 +1,166 @@
+% This is samplepaper.tex, a sample chapter demonstrating the
+% LLNCS macro package for Springer Computer Science proceedings;
+% Version 2.20 of 2017/10/04
+%
+\documentclass[11pt,runningheads]{llncs}
+%
+
+\usepackage{fullpage}
+%%%%%%%%%%%
+\newcommand{\srv}{\mathcal{S}}
+\newcommand{\cln}{\mathcal{C}}
+\newcommand{\scn}{\mathcal{SC}\xspace}
+\newcommand{\aud}{\mathcal{A}}
+\newcommand{\op}{\mathcal{O}}
+
+%
+\newcommand{\func}{\mathcal{F}}
+%%%%%%%%%%%
+\usepackage{multicol}
+\usepackage{multirow}
+\usepackage[table]{xcolor}
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{color}
+\usepackage{prettyref}
+\usepackage{booktabs}
+\usepackage{xspace}
+\usepackage[disable]{todonotes}
+\raggedbottom% to remove huge space
+\usepackage{url}
+\def\doubleunderline#1{\underline{\underline{#1}}}
+
+%%***   Counter  ***%%
+
+\usepackage{fmtcount}
+
+%%%%%%%%
+\usepackage{framed}
+
+\usepackage{esvect}
+\usepackage{tikz}
+\usepackage{blkarray}% http://ctan.org/pkg/blkarra
+\usepackage{mathtools}
+\usepackage{amsmath}
+\usepackage{bm}
+\usepackage{adjustbox}
+\usepackage{boxedminipage}
+\usepackage{blindtext}
+\usepackage{multicol}
+%%%%%%%%%
+\usepackage{pgfplots, pgfplotstable}
+
+\usepackage[hidelinks]{hyperref}
+\usepackage{float}
+\usepackage{boxedminipage}
+\usepackage{enumitem}
+\usepackage{amsmath}
+\usepackage{float}
+\usepackage[ruled,linesnumbered]{algorithm2e}
+\usepackage{subfig}
+\usepackage{graphicx}
+\usepackage{framed}
+\usepackage{esvect}
+\usepackage{tikz}
+\usepackage{latexsym}
+
+%\usepackage{pgfplots}
+\usepackage{pgfplots, pgfplotstable}
+\usepackage{blkarray}% http://ctan.org/pkg/blkarra
+\usepackage{mathtools}
+\usepackage{amsmath}
+\usepackage{bm}
+\usepackage{adjustbox}
+\usepackage{blindtext}
+\usepackage{multicol}
+\usepackage[disable]{todonotes}
+\usepackage{prettyref}
+\usepackage{multirow}
+\usepackage{adjustbox}
+\usepackage{blindtext}
+\usepackage{multicol}
+\usepackage{tablefootnote}
+\usepackage{colortbl}
+\usepackage[skins]{tcolorbox}
+%%%%%%%%%%%
+\newtcolorbox{mybox}[2][]{%
+  attach boxed title to top center
+               = {yshift=-11pt},
+               %width=85mm,%
+                  %height=52mm,
+  %colback      = black,
+  colframe     =black,
+  %fonttitle    = \bfseries,
+  colbacktitle = black,
+  title        = #2,#1,
+  enhanced,
+}
+
+\makeatletter
+\makeatother
+\usepackage{hyperref}
+
+\newcommand{\vs}{\vspace{.6mm}}
+
+\usepackage{titling}
+\setlength{\droptitle}{-7.1em} 
+
+
+\newcommand{\1}{1}
+\newcommand{\2}{2}
+\newcommand{\3}{3}
+\newcommand{\4}{4}
+
+\newcommand{\sz}{8.78cm}
+
+\newcommand{\st}{\scriptscriptstyle}
+
+\newcommand{\cs}{$\mathcal{CS}$\xspace}
+
+%%\usepackage{fancyhdr}
+%%\pagestyle{fancy}
+%%\fancyhf{}
+%%\fancyhf[rh]{\thepage}
+
+%\usepackage{titling}
+%\setlength{\droptitle}{-7.3em} 
+
+\usepackage[bottom= 2cm, top=2cm,left=1.58cm,right=1.58cm]{geometry}
+\date{}
+\begin{document}
+\newcounter{mycounter}%
+\newcommand{\printcntr}{%
+  \stepcounter{mycounter}%
+  \padzeroes[1]{\decimal{mycounter}}%
+}
+
+%
+\title{Protecting (Young) Victims of Cryptocurrency Fraud}
+\author{}
+\institute{}
+\maketitle  
+%%%%%%%%%%%%
+\vspace{-21mm}
+\begin{multicols}{2}
+
+
+
+\input{introduction}
+
+\input{research-gap}
+
+%\input{background}
+
+\input{The-project}
+
+
+
+%\section{Acknowledgements}
+
+% Igor, Elena, Patent
+
+%\bibliographystyle{ieeetr}
+%\input{ad-hoc-ref-2}
+\appendix
+\end{multicols}
+\end{document}
