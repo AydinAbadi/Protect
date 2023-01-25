@@ -121,7 +121,7 @@ To verify the hypothesis, the research will take three complementary approaches:
     \parbox{\sz}{%
     
 \textbf{WP1:}
-    
+    %
         \underline{\textbf{Formal Modelling {\small{(month 1--7)}}.}}
     %
 %
@@ -138,9 +138,9 @@ To verify the hypothesis, the research will take three complementary approaches:
  
 This WP involves developing an accurate mathematical model (task \1). The mathematical model developed in this WP will be based on a \textbf{novel combination} of (i) the models and theories used in the insurance industry, (ii) game theory, and (iii) a formal simulation-based paradigm \href{https://link.springer.com/chapter/10.1007/978-3-319-57048-8_6}{[\printcntr]}, to ensure that any solutions that fit this model can reimburse cryptocurrency fraud victims. The use of models and theories employed in the insurance industry will allow honest victims of (cryptocurrency) fraud to receive compensation for their financial losses to the fraud, via charging interacting parties a certain amount of \textbf{premium}. The use of game theory will ensure that the proposed model will capture the real-world settings in which adversarial and fraudulent behaviours are motivated by financial incentives; it will play a vital role in the calculation of premiums. Also, standard security/cryptographic models (such as the simulation-based paradigm) will ensure that any protocol that realises them would remain secure regardless of adversaries’ strategies. 
 
-The research will ensure that the model will be generic and solution-agnostic, so it can be used as a reference point by future researchers who want to develop enhanced provably secure solutions (that can realise the model).  
+The research will ensure that the model will be generic, so it can be used as a reference point by future researchers who want to develop enhanced provably secure solutions (that can realise the model).  
 
- \noindent$\bullet$\textbf{ Outcome}: It will be the first generic mathematical model for any mechanism that must reimburse victims of cryptocurrency fraud. 
+ \noindent$\bullet$\textbf{ Outcome}: The first generic model for any mechanism that must reimburse cryptocurrency victims. 
  
  
  
@@ -155,7 +155,7 @@ The research will ensure that the model will be generic and solution-agnostic, s
     \parbox{\sz}{%
     
     \textbf{WP2:}
-    
+    %
         \underline{\textbf{Devising Security Protocol {\small{(month 6--18)}}.}}      
     %
 %
@@ -180,7 +180,7 @@ Briefly, this WP includes two main tasks; developing a protocol (task \2.1) and 
 To design a protocol with the above features, the research must address several challenges, outlined below. 
 
 %\vspace{-3mm}
-\begin{enumerate}
+\begin{enumerate}[leftmargin=5mm]
 \item \textbf{Cryptocurrencies Vary in Capabilities.} Each cryptocurrency has different capabilities of supporting computations on transactions and on data stored on them, which significantly affect the way new security features can be integrated into them, without having to rebuild the entire cryptocurrency system from scratch. For instance, Ethereum by supporting arbitrary smart contracts can support (almost) any computation on transactions, whereas Bitcoin supports very limited computation. To address this challenge and develop a generic mechanism, the research will devise an off-chain protocol that will be run on powerful (but potentially untrusted) cloud computing servers that will need to only read the cryptocurrencies' content, and execute required computations \emph{locally}. 
 
 
@@ -192,15 +192,15 @@ that (a) it has sent a certain message or (b) it has never received a certain me
 third party which checks the token’s correctness, and decodes the messages. To protect the privacy
 of independent auditors from other parties, the scheme will ensure that only the final verdict (but not each individual vote) will be revealed. Thus, nobody can link a vote to a specific auditor. To this end, the research will use threshold e-voting protocols developed in \href{https://eprint.iacr.org/2022/107.pdf}{[16]}. 
  
- \item \textbf{Security.} Although the use of (multiple powerful servers in) the cloud could allow generic and scalable protocols, the cloud itself cannot be trusted with the correctness of computations it runs \href{https://stax.strath.ac.uk/concern/theses/qr46r085k}{[\printcntr]}. The cloud's misbehaviour can have serious repercussions, e.g., can switch the final verdict against a certain client to indicate that it should not receive reimbursement. To address this challenge, the research will use Verifiable Computation (VC) to enforce the cloud to prove the correctness of the computations it runs. To ensure the protocol will remain secure in the case where parties collude with each other to exploit the system, the research will use the counter-collusion mechanism in \href{https://dl.acm.org/doi/10.1145/3133956.3134032}{[\printcntr]} that creates distrust between colluding parties. 
+ \item \textbf{Security.} Although the use of the cloud could allow generic and scalable protocols, the cloud itself cannot be trusted with the correctness of computations it runs \href{https://stax.strath.ac.uk/concern/theses/qr46r085k}{[\printcntr]}. The cloud's misbehaviour can have serious repercussions, e.g., can switch the final verdict against a certain client to indicate that it should not receive reimbursement. To address this challenge, the research will use Verifiable Computation (VC) to enforce the cloud to prove the correctness of the computations it runs. To ensure the protocol will remain secure in the case where parties collude with each other to exploit the system, the research will use the counter-collusion mechanism in \href{https://dl.acm.org/doi/10.1145/3133956.3134032}{[\printcntr]} that creates distrust between colluding parties. 
  %
 \end{enumerate}
 %%%%%%
 %\vspace{-2mm}
 
-Overall, the research will use a \textbf{novel combination} of cloud computing, e-voting scheme, threshold signature scheme, insurance-like mechanism, game theory, tamper-evident log, SAP, and VC protocol to devise the protocol, 
+The research will use a \textbf{novel combination} of cloud computing, e-voting scheme, threshold signature scheme, insurance-like mechanism, game theory, tamper-evident log, SAP, and VC protocol to devise the protocol. 
 %
-The protocol will involve five types of parties; namely, (a) \textbf{servers}, each of which is a service provider which accepts cryptocurrency in exchange for the service it provides (e.g., investments in cryptocurrency,  exchange of fiat currency with cryptocurrency, or selling items for cryptocurrency), (b) \textbf{clients}, each of which is a customer of a server (c) \textbf{a set of Cloud Servers} (\cs), (d) \textbf{a committee of auditors}, consisting of trusted third-party auditors that compile complaints and provide their verdicts, and (e) \textbf{an insurance operator} ($O$), a third party whose main role is to register the servers, clients, and auditors with the \cs. 
+The protocol will involve five types of parties; (a) \textbf{servers}, each of which is a service provider which accepts cryptocurrency in exchange for the service it provides (e.g., investments in cryptocurrency,  exchange of fiat currency with cryptocurrency, or selling items for cryptocurrency), (b) \textbf{clients}, each of which is a customer of a server (c) \textbf{a set of Cloud Servers} (\cs), (d) \textbf{a committee of auditors}, consisting of trusted third-party auditors that compile complaints and provide their verdicts, and (e) \textbf{an insurance operator} ($O$), a third party whose main role is to register the servers, clients, and auditors with the \cs. 
 
 The idea behind the protocol design will be that each time a client sends digital money to a server, it needs to pay a certain amount of premium to cover the transaction. Later, when it finds out it has been defrauded by the server, it raises a dispute by sending a complaint to \cs; the auditors compile the complaint and reimburse the victim if its complaint is valid.
 
@@ -214,7 +214,7 @@ The idea behind the protocol design will be that each time a client sends digita
 
 
 At a high level, the protocol will work as follows. First, $O$ registers a set of servers,  clients, and auditors. $O$ also fixes a set of public parameters (which will be used to determine insurance premiums) and sends them to \cs. All data are recorded in a tamper-evident log (e.g., through Proofs of Data Retrievability (PoR) [\printcntr]) maintained by \cs, to ensure the data integrity is protected from \cs. 
-
+%
 Next, each client and $O$ run SAP to provably agree on a secret key, $k$. Also, $O$ and the auditors jointly generate a public and private key pair for a threshold signature scheme. They do that for each cryptocurrency payment system (e.g., for Ethereum and Bitcoin). Certain threshold signature schemes (e.g.,  in \href{https://link.springer.com/chapter/10.1007/3-540-44987-6_10}{[\printcntr]}, \href{https://link.springer.com/chapter/10.1007/978-3-319-39555-5_9}{[\printcntr]}) let parties (1) generate the signing key without any party learning the key and (2) generate a signature on a message only if at least a certain threshold of the parties signs the message. 
 
 After that, $O$ tags each public key, say $pk_i$, with the related cryptocurrency's name, e.g., ($pk_{i}, Bitcoin$). It stores the tagged public keys in the log maintained by \cs. 
@@ -225,11 +225,10 @@ When a client realises it has been defrauded by one of the registered servers, i
 
 
 Each auditor verifies the proof. If the verification is passed, then it decrypts and compiles the complaint. The auditor (i) checks whether the client has paid the premium, (ii) generates a verdict, (iii) encodes the verdict (using the efficient e-voting that we developed in \href{https://eprint.iacr.org/2022/107.pdf}{[16]}), and (iv) sends the result to \cs\ which can generate a transaction signed by a predefined threshold of the auditors (using a threshold signature) if the threshold of them voted to compensate the client. In this case, \cs\ sends the signed transaction to the cryptocurrency network and accordingly the client will receive compensation.  
-
-
+%
 To ensure that the protocol will remain secure if a client and server/auditor collude with each other to exploit the system and increase their utility, the research will use the game theory-based counter-collusion mechanism in \href{https://dl.acm.org/doi/10.1145/3133956.3134032}{[18]} which creates distrust between the colluding parties and incentives a party to betray its counter-party for a higher payoff. 
 
-The research will \textbf{prove} the security of the devised protocol and formally show that it will fit the model in WP1.  
+The research will \textbf{prove} the security of the protocol and formally show that it will fit the model in WP1.  
 
 % Thus, the protocol will rely on a \textbf{novel combination of blockchain, cloud computing, insurance, game theory, and verifiable computation}. 
  
@@ -249,9 +248,8 @@ The research will \textbf{prove} the security of the devised protocol and formal
 \noindent\fcolorbox{gray}{gray!20}{%
     \parbox{\sz}{%
      {\textbf{WP3:}}
-     
-        \underline{\textbf{Implementation and Evaluation {\small{(month 16--28)}}.}}
-        
+     %
+        \underline{\textbf{Implementation and Evaluation {\small{(month 16--28)}}.}}   
     %
 %
 %\item\label{Q::CoP-Sec}\textit{Is CoP secure? If not, how to make it provably secure?} 
@@ -270,15 +268,14 @@ Specifically, the research will implement the protocol that will be devised in W
 %
 We have already implemented SAP, tamper-evident logging, and threshold e-voting protocols (see \href{https://github.com/AydinAbadi/RC-S-P/blob/main/RC-PoR-P-Source-cod/RC-PoR-P-Smart-Contract.sol}{[\printcntr]}, \href{https://github.com/AydinAbadi/RC-S-P/blob/main/RC-PoR-P-Source-cod/RC-PoR-P.cpp}{[\printcntr]}, and \href{https://github.com/AydinAbadi/PwDR/blob/main/PwDR-code/generic-encoding-decoding.cpp}{[\printcntr]} respectively for the source code). However, other sub-protocols (e.g., threshold signature, client, and server) and the main (wrapping) protocol will be implemented. The protocol will be implemented in the form of two packages (thus each task will be split into two subtasks). 
 
-In the first package (task \3.1.1), the research will use (1) local servers, i.e., the UCL Computer Science High-performance Clusters, instead of actual cloud servers and (2) a cryptocurrency test net, instead of using an actual cryptocurrency system. This approach will allow conducting of various tests and refinements for free without having to use the actual cloud and cryptocurrency network. The research (in task \3.2.1) will evaluate the run-time of different parties when the number of victims is low and high (e.g., in the range of $[1,1000]$). It is expected that auditor-side computation (in particular executing threshold signature scheme) will be a bottleneck when the number of victims is high at any given time, as it would involve modular exponentiations that are usually computationally expensive. The research will perform a concrete cost evaluation to verify the above hypothesis and remove the bottleneck, e.g., by finding an optimal number of auditors and/or servers. %The research will identify other bottlenecks and remove them. 
+In the first package (task \3.1.1), the research will use (1) local servers, i.e., the UCL Computer Science High-performance Clusters, instead of actual cloud servers and (2) a cryptocurrency test net, instead of using an actual cryptocurrency system. This approach will let conducting various tests and refinements for free without having to use the actual cloud and cryptocurrency network. The research (in task \3.2.1) will evaluate the run-time of different parties when the number of victims is low and high (e.g., in the range of $[1,1000]$). It is expected that auditor-side computation (in particular executing threshold signature scheme) will be a bottleneck when the number of victims is high at any given time, as it would involve modular exponentiations that are usually computationally expensive. The research will perform a cost evaluation to verify the above hypothesis and remove the bottleneck, e.g., by finding an optimal number of auditors or servers. %The research will identify other bottlenecks and remove them. 
+%
+ In the second package (task \3.1.2), the research will run the improved implementation using actual cloud servers and cryptocurrency; it evaluates parties' costs in a real-world setting (task \3.2.2). 
 
 
- In the second package (task \3.1.2), the research will run the improved implementation using actual cloud servers and cryptocurrency and evaluates parties' costs in a real-world setting (task \3.2.2). 
 
 
-
-
- \noindent$\bullet$\textbf{ Outcome}: WP3's outcome will be (i) two open source packages that implement the protocol, and (ii) performance evaluations of the protocol. %The prototype implementation and benchmark also represent a contribution to the cryptocurrency,  cryptography, and software engineer research communities, as they will be provided with a basis for building and evaluating other related protocols in the future. The outcome of this WP will also benefit software engineers who are interested in developing and evaluating cryptographic and cryptocurrency systems.  
+ \noindent$\bullet$\textbf{ Outcome}:  (i)  two open-source packages implementing the protocol, and (ii) the protocol's performance evaluations. %The prototype implementation and benchmark also represent a contribution to the cryptocurrency,  cryptography, and software engineer research communities, as they will be provided with a basis for building and evaluating other related protocols in the future. The outcome of this WP will also benefit software engineers who are interested in developing and evaluating cryptographic and cryptocurrency systems.  
  
  
 \vs
@@ -286,7 +283,7 @@ In the first package (task \3.1.1), the research will use (1) local servers, i.e
     \parbox{\sz}{%
     
     \textbf{WP4:}
-    
+    %
         \underline{\textbf{Exploring Further Applications {\small{(month 27--36)}}.}}
     %
 %
@@ -300,13 +297,13 @@ In the first package (task \3.1.1), the research will use (1) local servers, i.e
 
 \vs
 
- The research will explore further applications of the protocol (from WP2); specifically, the research will investigate (i) insuring the VS: Verifiable Service (task \4.1), and (ii) insuring the MPC: secure Multi-Party Computation (task \4.2). The idea is that for each run of VS/MPC, the participants of  VS/MPC pay a premium. They will be compensated if they can prove that they acted honestly but their counter-parties acted maliciously. 
+ The research will explore further applications of the protocol (from WP2); specifically, it will investigate (i) insuring the VS: Verifiable Service (task \4.1), and (ii) insuring the MPC: secure Multi-Party Computation (task \4.2). The idea is that for each run of VS/MPC, the participants of  VS/MPC pay a premium. They will be compensated if they can prove that they acted honestly but their counter-parties acted maliciously. 
  
  
-A Verifiable Service (VS) is a two-party (client-server) protocol in which a client chooses a function, $\func$,
+A Verifiable Service (VS) is a client-server protocol in which a client chooses a function, $\func$,
 and provides (an encoding of) $\func$, its input $u$, and a query $q$ to a server potentially malicious. The server is expected to evaluate
-$\func$ on $u$ and $q$ (i.e., $\func(u, q)=o$) and respond with the output $o$ and proof $\pi$ asserting that the output was generated correctly. Given $(o, \pi)$, the client verifies that the output is indeed the output of the function computed on the provided input. In VS, either the
-computation (on the input) or both the computation and storage of the input are delegated to the server. ``Proofs of Retrievability''  and  ``Verifiable Computation'' are two examples of VS's instantiations. A serious limitation of state-of-the-art VS is that a client receives no compensation when the server does not deliver the service. However, this is not suitable for \textbf{mission-critical data or computation}, as other crucial services may depend on the result that an honest server would provide. 
+$\func$ on $u$ and $q$ (i.e., $\func(u, q)=o$) and respond with the output $o$ and proof $\pi$ asserting that the output was generated correctly. Given $(o, \pi)$, the client verifies that the output is indeed the output of $\func$ computed on the input. In VS, either the
+computation (on the input) or both the computation and storage of the input are delegated to the server. ``Proofs of Retrievability''  and  ``Verifiable Computation'' are two examples of VS's instantiations. A serious limitation of existing VS is that a client receives no compensation if the server does not deliver the service. But, this is not suitable for \textbf{mission-critical data or computation}, as other crucial services may depend on the result that an honest server would provide. 
 
 The research will adjust the protocol, devised in PW2, to let an honest client in VS  receive compensation if the server does not deliver the promised service. To do so, the research will (a) use publicly verifiable VS that is also secure against a malicious client, i.e., Verifiable Service with IDentifiable abort (VSID) in \href{https://arxiv.org/pdf/2208.00283.pdf}{[\printcntr]}, and (b) require the server in VS to sign the pair $(o,\pi)$ that it sends to the client. In this modified protocol, when the client rejects the server's proof/output, it forwards the signed $(o,\pi)$ to the auditors (of the WP2's protocol) that verify the output's correctness, ensure the client has acted honestly in VS, and decide whether the client should be compensated.  Thus, the research will modify the auditor-side verification algorithm of the protocol in WP2 and uses an appropriate VS (i.e., VSID) to ensure that (1) an honest client will receive compensation if the server provides invalid proof, and (2) a malicious client cannot exploit the protocol and receive compensation that it does not deserve. The research will formally prove the security of the resulting protocol (task \4.3). 
 
@@ -317,9 +314,9 @@ The research will adjust the protocol, devised in PW2, to let an honest client i
 The research will modify the protocol of PW2 to let parties in MPC receive compensation if they do not receive correct results,  without requiring them to deposit any form of money. The main change will be made to the auditor-side verification algorithm of the protocol in WP2. In the modified protocol, each auditor will check the validity of the proofs often parties in MPC provide to each other to prove that they have acted honestly. Specifically, each auditor will check if the claimant parties acted honestly, whereas their counter-parties have not. The research will also prove the security of the resulting protocol (task \4.4).
  
  
+   \noindent$\bullet$\textbf{ Outcome}: Two new applications of the protocol (developed in WP2) in VC and MPC research lines. %schemes to allow an honest result recipient to receive compensation if it could not approve result correctness. 
  
- 
-  \noindent$\bullet$\textbf{ Outcome}: The outcome of WP4 will be two new applications of the protocol (developed in WP2). Specifically, the WP2's protocol will be adjusted and then applied to VC and MPC schemes to allow an honest result recipient to receive compensation if it could not approve result correctness. 
+%  \noindent$\bullet$\textbf{ Outcome}: The outcome of WP4 will be two new applications of the protocol (developed in WP2). Specifically, the WP2's protocol will be adjusted and then applied to VC and MPC schemes to allow an honest result recipient to receive compensation if it could not approve result correctness. 
  
  %\vspace{-5mm}
  \subsection{Novelty}
@@ -333,9 +330,7 @@ The research will modify the protocol of PW2 to let parties in MPC receive compe
  
 
  Concretely, first, this work presents a novel mathematical model for reimbursing cryptocurrency fraud victims by relying on a unique combination of (i) the models and theories used in the insurance industry, (ii) game theory, and (iii) a formal simulation-based paradigm. Second, the design of the generic security protocol, that can work with any cryptocurrency, is very novel. The protocol will rely on a unique combination of cloud computing, e-voting scheme, threshold signature scheme, insurance-like mechanism, game theory, tamper-evident log, PETs, and VC to satisfy security and efficiency requirements. Such a combination, to our knowledge, has not been seen before. 
- 
-
-
+ %
  Third, the idea of applying the WP2's protocol to VC and MPC is novel too; as it will let an honest client receive compensation for not receiving valid results/proofs, without requiring any deposit. The existing scheme that lets a party receive compensation,  in MPC, requires every party to deposit cryptocurrency proportionate to the total number of parties participating in the protocol, which significantly limits its real-world application and adoption.
  
  
@@ -347,11 +342,9 @@ The research will modify the protocol of PW2 to let parties in MPC receive compe
 \subsection{Academic Importance and Impact}
 %\vspace{-1.2mm}
 
-This research will significantly improve the protection level of cryptocurrency fraud victims. Therefore, the research community in cryptocurrency and cryptography will directly benefit from it. 
-
-
-
-The mathematical model, in WP1, will serve as a solid basis for systematic evaluations of victim protection levels of other payment systems. The security protocols, in WP2, will enable researchers to understand which tools, techniques, and computational hardness assumptions must be relied upon to build a generic protocol that can help victims of cryptocurrency fraud to receive compensation. The implementation/benchmark, in WP3, presents a contribution to software engineers, as they will be provided with a basis for building other related protocols in the future. The protocols designed in WP4 for the first time will show how to insure the verifications' outputs, in VS and MPC. To ensure the research will have a maximum academic impact, the researchers will: (a) \textbf{publish and present research findings} at scholarly conferences, and (b) \textbf{maintain an online anti-fraud scientific database} on the project's website, acting as a central hub for the latest related publications.% (see the project's plan for more details) %about future publications).
+This research will significantly improve the protection level of cryptocurrency fraud victims. So, the research community in cryptocurrency and cryptography will benefit from it. 
+%
+The mathematical model, in WP1, will serve as a solid basis for systematic evaluations of victim protection levels of other payment systems. The security protocols, in WP2, will enable researchers to understand which tools, techniques, and computational hardness assumptions must be relied upon to build a generic protocol that can help victims of cryptocurrency fraud to receive compensation. The implementation/benchmark, in WP3, presents a contribution to software engineers, as they will be provided with a basis for building other related protocols in the future. The protocols designed in WP4 will show how to insure the verifications' outputs, in VS and MPC. To ensure the research will have a maximum academic impact, the researchers will: (a) \textbf{publish and present research findings} at scholarly conferences, and (b) \textbf{maintain an online anti-fraud scientific database} on the project's website, acting as a central hub for the latest related publications.% (see the project's plan for more details) %about future publications).
 
 %%\vspace{-4.5mm}
 %\subsection{Societal Importance and Impact}
@@ -372,7 +365,7 @@ The result of this research (when adopted) will benefit UK residents from financ
 %\vspace{-5mm}
 \subsection{Economic Importance and Impact}
 %\vspace{-1mm}
-This research (when adopted) will directly benefit the UK economy, as people will lose far less to fraud. It is expected this research to yield \textbf{new Fintech insurance startups} that will provide users of cryptocurrency with protection against cryptocurrency fraud. This has the potential to make the UK a base for international investment in this \emph{new line of the insurance industry}. To ensure the research will have adequate economic impacts, the researchers will (1) \textbf{share the research findings with UK regulators} (e.g., FCA) and (2) \textbf{collaborate with UCL Public Engagement and Media}, to seek effective ways to draw investors' attention to the findings.
+This research (when adopted) will benefit the UK economy, as people will lose far less to fraud. It is expected this research to yield \textbf{new Fintech insurance startups} that will provide users of cryptocurrency with protection against cryptocurrency fraud. This has the potential to make the UK a base for international investment in this \emph{new line of the insurance industry}. To ensure the research will have adequate economic impacts, the researchers will (1) \textbf{share the research findings with UK regulators} (e.g., FCA) and (2) \textbf{collaborate with UCL Public Engagement and Media}, to draw investors' attention to the findings.
 
 
 
@@ -390,6 +383,10 @@ This research (when adopted) will directly benefit the UK economy, as people wil
 \subsection{Strategic Fit} 
 %\vspace{-1mm}
 The research programme has the potential for substantial impact across multiple EPSRC’s priority areas; such as Information and Communication Technologies (ICT) and Mathematical Sciences themes. It is aligned with UKRI’s Strategic Priority called “Protecting Citizens Online” and with \textbf{Priority 5.1 of the UKRI Strategy 2022 to 2025} which aims to build a secure world by \textbf{enhancing national security across virtual spaces}. It is also aligned with \textbf{Objective 5: world-class impacts of the UKRI Strategy 2022 to 2025}, on investing to secure a competitive advantage in emerging technologies and create opportunities for UK businesses in expanding global markets including \textbf{Fintech}.  
+
+
+
+\input{refer}
 %
 %It also aligns with the \textbf{UKRI Industrial Strategy Challenge Fund}, specifically “Digital Security by Design” aiming to help the UK computing infrastructure to be more \textbf{secure against key global risks including online fraud}.  
 %%%
