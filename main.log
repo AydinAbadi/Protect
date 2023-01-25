@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.9.22)  25 JAN 2023 17:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.9.22)  25 JAN 2023 18:03
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1381,7 +1381,6 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 134.
 LaTeX Info: Redefining \pageref on input line 134.
 LaTeX Info: Redefining \nameref on input line 134.
- (./main.out) (./main.out)
 \@outlinefile=\write6
 \openout6 = `main.out'.
 
@@ -1395,8 +1394,7 @@ LaTeX Font Info:    Font shape `T1/phv/m/n' will be
 (Font)              scaled to size 11.39996pt on input line 146.
 LaTeX Font Info:    Trying to load font information for U+esvect on input line 
 146.
-
-(/usr/local/texlive/2020/texmf-dist/tex/latex/esvect/uesvect.fd
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/esvect/uesvect.fd
 File: uesvect.fd 
 )
 LaTeX Font Info:    Trying to load font information for U+lasy on input line 14
@@ -1427,18 +1425,24 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 181.
  (./main.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 181.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 181.
-Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: E6646C8EF5A34997608544440BC8F971;948.
 
+
+Package rerunfilecheck Warning: File `main.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `main.out':
+(rerunfilecheck)             Before: <no file>
+(rerunfilecheck)             After:  E6646C8EF5A34997608544440BC8F971;948.
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 37256 strings out of 480608
- 867397 string characters out of 5903630
+ 37237 strings out of 480608
+ 867160 string characters out of 5903630
  1300666 words of memory out of 5000000
- 52386 multiletter control sequences out of 15000+600000
+ 52371 multiletter control sequences out of 15000+600000
  560833 words of font info for 74 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  68i,7n,102p,2250b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1450,10 +1454,10 @@ e/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive
 /2020/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2020/t
 exmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2020/texmf-di
 st/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on main.pdf (8 pages, 104884 bytes).
+Output written on main.pdf (8 pages, 103889 bytes).
 PDF statistics:
- 206 PDF objects out of 1000 (max. 8388607)
- 171 compressed objects within 2 object streams
+ 163 PDF objects out of 1000 (max. 8388607)
+ 128 compressed objects within 2 object streams
  27 named destinations out of 1000 (max. 500000)
- 221 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 109 words of extra memory for PDF output out of 10000 (max. 10000000)
 
