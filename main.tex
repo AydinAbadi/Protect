@@ -37,6 +37,9 @@
 \usepackage{fmtcount}
 
 %%%%%%%%
+
+
+
 \usepackage{framed}
 
 \usepackage{esvect}
@@ -46,18 +49,18 @@
 \usepackage{amsmath}
 \usepackage{bm}
 \usepackage{adjustbox}
-\usepackage{boxedminipage}
+%\usepackage{boxedminipage}
 \usepackage{blindtext}
 \usepackage{multicol}
 %%%%%%%%%
 \usepackage{pgfplots, pgfplotstable}
 
-\usepackage[hidelinks]{hyperref}
-\usepackage{float}
-\usepackage{boxedminipage}
-\usepackage{enumitem}
+%\usepackage[hidelinks]{hyperref}
+%\usepackage{float}
+%\usepackage{boxedminipage}
+%\usepackage{enumitem}
 \usepackage{amsmath}
-\usepackage{float}
+%\usepackage{float}
 \usepackage[ruled,linesnumbered]{algorithm2e}
 \usepackage{subfig}
 \usepackage{graphicx}
@@ -100,7 +103,10 @@
 
 \makeatletter
 \makeatother
-\usepackage{hyperref}
+%\usepackage{breakurl}
+\usepackage[breaklinks=true,hidelinks]{hyperref}
+%\usepackage{float}
+
 
 \newcommand{\vs}{\vspace{.5mm}}
 
@@ -132,11 +138,32 @@
 
 \usepackage{standalone}
 \begin{document}
+
 \newcounter{mycounter}%
 \newcommand{\printcntr}{%
   \stepcounter{mycounter}%
   \padzeroes[1]{\decimal{mycounter}}%
 }
+
+
+%%%%%%%%%% counter for track record 
+
+%% counter for the main body of track record
+\newcounter{mycounterx}%
+\newcommand{\x}{%
+  \stepcounter{mycounterx}%
+  \padzeroes[1]{\decimal{mycounterx}}%
+}
+
+%%% counter for the references of the  track record
+
+\newcounter{mycountery}%
+\newcommand{\y}{%
+  \stepcounter{mycountery}%
+  \padzeroes[1]{\decimal{mycountery}}%
+}
+
+
 
 %
 \title{Protecting (Young) Victims of Cryptocurrency Fraud}
