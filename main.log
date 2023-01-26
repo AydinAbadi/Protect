@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.9.22)  26 JAN 2023 18:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.9.22)  26 JAN 2023 20:36
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1420,30 +1420,30 @@ Overfull \hbox (18.31273pt too wide) in paragraph at lines 5--10
 main/PwDR-code/generic-encoding-decoding.cpp[],
  []
 
-)) (./track-record.tex [6] (./refer-2.tex
+)) (./track-record.tex [6] [7] (./refer-2.tex
 Overfull \hbox (10.20589pt too wide) in paragraph at lines 11--13
 []\T1/phv/m/n/10.95 https://www.ucl.ac.uk/computer-science/news/2022/dec/ucl-co
 mputer-sciences-success-privacy-enhancing-
  []
 
-[7])) [8]
+)) [8]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 208.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 208.
  (./main.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 208.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 208.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: E6646C8EF5A34997608544440BC8F971;948.
+(rerunfilecheck)             Checksum: 200C9836EFE8739CDF62387C08071699;1072.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 37198 strings out of 480608
- 866377 string characters out of 5903630
+ 37202 strings out of 480608
+ 866437 string characters out of 5903630
  1296607 words of memory out of 5000000
- 52335 multiletter control sequences out of 15000+600000
+ 52337 multiletter control sequences out of 15000+600000
  560833 words of font info for 74 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  68i,7n,102p,2509b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1455,10 +1455,10 @@ e/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive
 /2020/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2020/t
 exmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2020/texmf-di
 st/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on main.pdf (8 pages, 106114 bytes).
+Output written on main.pdf (8 pages, 106747 bytes).
 PDF statistics:
- 212 PDF objects out of 1000 (max. 8388607)
- 177 compressed objects within 2 object streams
- 27 named destinations out of 1000 (max. 500000)
- 221 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 220 PDF objects out of 1000 (max. 8388607)
+ 185 compressed objects within 2 object streams
+ 29 named destinations out of 1000 (max. 500000)
+ 237 words of extra memory for PDF output out of 10000 (max. 10000000)
 
