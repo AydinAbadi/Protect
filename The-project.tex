@@ -213,7 +213,7 @@ The idea behind the protocol design will be that each time a client sends digita
 
 
 
-At a high level, the protocol will work as follows. First, $O$ registers a set of servers,  clients, and auditors. $O$ also fixes a set of public parameters (which will be used to determine insurance premiums) and sends them to \cs. All data are recorded in a tamper-evident log (e.g., through Proofs of Data Retrievability (PoR) [\printcntr]) maintained by \cs, to ensure the data integrity is protected from \cs. 
+At a high level, the protocol will work as follows. First, $O$ registers a set of servers,  clients, and auditors. $O$ also fixes a set of public parameters (which will be used to determine insurance premiums) and sends them to \cs. All data are recorded in a tamper-evident log (e.g., through Proofs of Data Retrievability (PoR) \href{https://link.springer.com/chapter/10.1007/978-3-540-89255-7_7}{[\printcntr]}) maintained by \cs, to ensure the data integrity is protected from \cs. 
 %
 Next, each client and $O$ run SAP to provably agree on a secret key, $k$. Also, $O$ and the auditors jointly generate a public and private key pair for a threshold signature scheme. They do that for each cryptocurrency payment system (e.g., for Ethereum and Bitcoin). Certain threshold signature schemes (e.g.,  in \href{https://link.springer.com/chapter/10.1007/3-540-44987-6_10}{[\printcntr]}, \href{https://link.springer.com/chapter/10.1007/978-3-319-39555-5_9}{[\printcntr]}) let parties (1) generate the signing key without any party learning the key and (2) generate a signature on a message only if at least a certain threshold of the parties signs the message. 
 
